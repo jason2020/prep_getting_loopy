@@ -21,7 +21,7 @@ for (var i = 0; i < 50; i++) {
 console.log(evenNumberArray);
 */
 
-
+/*
 var oopsArray = ['turn' , , 'down' , , 'for' , , 'what'];
 var length = oopsArray.length;
 
@@ -32,3 +32,11 @@ for (var i = 1; i < length; i++) {
 }
 
 console.log(oopsArray);
+*/
+
+var oopsArray = [ 'turn' , 'nope' , 'down' , 'nope' , 'for' , 'nope' , 'what' ];
+var length = oopsArray.length;
+
+for (var i = length - 1; i >= 0; i--) {
+	console.log(oopsArray[i]);
+}
