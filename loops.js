@@ -72,3 +72,26 @@ function loop(array) {
 
 loop(oopsArray)
 */
+
+var isNapTime = false;
+var napSchedule = [false, false, true, false, true, true];
+
+function nap(schedule) {
+	if (schedule == true) {
+		console.log("ZzZzZzZz");
+	} else {
+		console.log("Gotta get to work!");
+		isNapTime = true;
+	}
+}
+
+function loop(array) {
+	var length = array.length;
+	for (i = 0; i < length; i++) {
+		nap(array[i]);
+	}
+}
+
+loop(napSchedule);
+
+
