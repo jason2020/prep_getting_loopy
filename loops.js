@@ -73,6 +73,7 @@ function loop(array) {
 loop(oopsArray)
 */
 
+/* Challenge 6
 var isNapTime = false;
 var napSchedule = [false, false, true, false, true, true];
 
@@ -93,5 +94,9 @@ function loop(array) {
 }
 
 loop(napSchedule);
+*/
+
+var copyOfValuesArray = [];
+var valuesArray = [99, 66, 829, 1941, 8, 76];
 
 
