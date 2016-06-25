@@ -22,3 +22,13 @@ console.log(evenNumberArray);
 */
 
 
+var oopsArray = ['turn' , , 'down' , , 'for' , , 'what'];
+var length = oopsArray.length;
+
+for (var i = 1; i < length; i++) {
+	if (i % 2 !== 0) {
+		oopsArray.splice(i, 1, "nope");
+	}
+}
+
+console.log(oopsArray);
