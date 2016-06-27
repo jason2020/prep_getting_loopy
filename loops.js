@@ -1,6 +1,6 @@
 // Do your work here
 
-/* Challenge 1
+/* Challenge 1 Presidents
 var presidents = ["Washington", "Adams", "Jefferson", "Madison", "Monroe"];
 
 function loop(array) {
@@ -15,7 +15,7 @@ function loop(array) {
 loop(presidents);
 */
 
-/* Challenge 2
+/* Challenge 2 The string of numbers
 var stringOfNumbers = '';
 
 function loop(str) {
@@ -29,7 +29,7 @@ loop(stringOfNumbers);
 */
 
 
-/* Challenge 3
+/* Challenge 3 Add only even numbers
 var evenNumberArray = [];
 
 function loop(array) {
@@ -42,7 +42,7 @@ function loop(array) {
 loop(evenNumberArray);
 */
 
-/* Challenge 4
+/* Challenge 4 add nope to every odd index
 var oopsArray = ['turn' , , 'down' , , 'for' , , 'what'];
 
 
@@ -59,7 +59,7 @@ function loop(array) {
 loop(oopsArray);
 */
 
-/* Challenge 5
+/* Challenge 5 show the array backwards
 var oopsArray = [ 'turn' , 'nope' , 'down' , 'nope' , 'for' , 'nope' , 'what' ];
 
 function loop(array) {
@@ -70,10 +70,10 @@ function loop(array) {
 	}
 }
 
-loop(oopsArray)
+loop(oopsArray);
 */
 
-/* Challenge 6
+/* Challenge 6 isNaptime
 var isNapTime = false;
 var napSchedule = [false, false, true, false, true, true];
 
@@ -96,7 +96,87 @@ function loop(array) {
 loop(napSchedule);
 */
 
+/* Copy Array
 var copyOfValuesArray = [];
 var valuesArray = [99, 66, 829, 1941, 8, 76];
 
+function copyArray (originArray, destinationArray) {
+	var length = originArray.length;
+	for (var i = 0; i < length; i++) {
+		destinationArray.push(originArray[i]);
+	}
+}
 
+copyArray(valuesArray, copyOfValuesArray);
+
+console.log(valuesArray);
+console.log(copyOfValuesArray);
+*/
+
+/* Only Strings
+var miscStorage =  [[], 'Carrots', 9, 'Beets', {}, {name: "Todd B."}, 'Mush'];
+function generateArrayOfStrings(storage) {
+	var array = [],
+		length = miscStorage.length;
+	for (var i = 0; i < length; i++) {
+		if (typeof miscStorage[i] === "string") {
+			array.push(miscStorage[i]);
+		}
+	}
+	return array;
+}
+
+console.log(generateArrayOfStrings(miscStorage));
+*/
+
+var currentClass = [
+  {
+    name: 'Doug',
+    graduated: false,
+    enrolled: true
+  },
+  {
+    name: 'Pat',
+    graduated: false,
+    enrolled: false
+  },
+  {
+    name: 'Marsha',
+    graduated: false,
+    enrolled: false
+  },
+  {
+    name: 'Moira',
+    graduated: false,
+    enrolled: true
+  },
+  {
+    name: 'Ben',
+    graduated: false,
+    enrolled: true
+  },
+  {
+    name: 'Nigel the Giraffe',
+    graduated: false,
+    enrolled: false
+  },
+  {
+    name: 'Brandon the Shark',
+    graduated: false,
+    enrolled: true
+  }
+]
+
+function graduateAndSetNewClass(class_) {
+	var length = class_.length
+	for (var i = 0; i < length; i++) {
+		if (class_[i].enrolled == true) {
+			class_[i].graduated = true;
+		} else {
+			class_[i].enrolled = true;
+		}
+	}
+}
+
+graduateAndSetNewClass(currentClass);
+console.log(currentClass);
